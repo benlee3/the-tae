@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  Row.swift
 //  TheTae
 //
 //  Created by Ben Lee on 3/18/20.
@@ -8,19 +8,19 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Row: View {
+    var image: Image
+    
     var body: some View {
-        VStack {
-            Text("The Tae")
-            .font(.title)
+        HStack {
             
+            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         }
-        
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Row_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Row()
     }
 }
